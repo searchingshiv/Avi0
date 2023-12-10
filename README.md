@@ -35,4 +35,4 @@
 ```
 
 
-- [© 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧❤](https://telegram.me/THE_DS_OFFICIAL)]
+- {© 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧}(https://telegram.me/THE_DS_OFFICIAL)]

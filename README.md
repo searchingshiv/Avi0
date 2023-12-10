@@ -5,7 +5,7 @@
 
 
 <h4 align='center'>✯ Demo Bot ✯<br></h4>
-<h3 align='center' ><b><a href="https://telegram.me/CapXBot">¢αρтισи вσт</a></b></h3>
+<h3 align='center' ><b><a href="https://telegram.me/DS_CAPTION_BOT">¢αρтισи вσт</a></b></h3>
 
 
 ###  Config Vars :
@@ -35,4 +35,4 @@
 ```
 
 
-- [© Avishkar Patil](https://github.com/avipatilpro)
+- [© 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧](https://telegram.me/THE_DS_OFFICIAL)]

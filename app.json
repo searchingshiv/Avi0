@@ -38,8 +38,8 @@
       "value": ""
     },
     "ADMIN_USERNAME": {
-      "description": "Admin username without [@], Default will be Ts_bots",
-      "value": "AvishkarPatil", 
+      "description": "Admin username without [@], Default will be THE_DS_OFFICIAL",
+      "value": "THE_DS_OFFICIAL", 
       "required": false
     }        
     

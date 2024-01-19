@@ -38,7 +38,7 @@ class autocaption(Client):
     async def sync_time(self):
         try:
             await self.send(pyrogram.functions.Ping(data=bytes(8)))
-        except pyrogram.errors.RPCError as e=
+        except pyrogram.errors.RPCError as e:
             print(f"Time Synchronization Error= {e}")
         else:
             print("Time Synchronization Successful")

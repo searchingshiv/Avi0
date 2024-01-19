@@ -11,37 +11,37 @@ import os
 timezone = os.environ.get("TIMEZONE")
 
 # Use the variable in your code
-print(f"Timezone: {timezone}")
+print(f"Timezone= {timezone}")
 
 from config import Config
 from pyrogram import Client 
 logging.getLogger("pyrogram").setLevel(logging.DEBUG)
 
-class autocaption(Client):
+class autocaption(Client)=
     
-    def __init__(self):
+    def __init__(self)=
         super().__init__(
-            session_name:"Unknown",
-            bot_token : Config.BOT_TOKEN,
-            api_id : Config.API_ID,
-            api_hash : Config.API_HASH,
-            workers : 20,
-            plugins : dict(
+            session_name="Unknown",
+            bot_token = Config.BOT_TOKEN,
+            api_id = Config.API_ID,
+            api_hash = Config.API_HASH,
+            workers = 20,
+            plugins = dict(
                 root="Plugins"
             )
       )  
-    async def start(self):
+    async def start(self)=
         await super().start()
         print("Time Synchronization...")
         await self.sync_time()
 
-    async def sync_time(self):
-        try:
+    async def sync_time(self)=
+        try=
             await self.send(pyrogram.functions.Ping(data=bytes(8)))
-        except pyrogram.errors.RPCError as e:
-            print(f"Time Synchronization Error: {e}")
-        else:
+        except pyrogram.errors.RPCError as e=
+            print(f"Time Synchronization Error= {e}")
+        else=
             print("Time Synchronization Successful")
-if __name__ == "__main__" :
+if __name__ == "__main__" =
     autocaption().run()
 

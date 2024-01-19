@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.DEBUG,
 logger = logging.getLogger(__name__)
 
 import pyrogram
-from pyrogram import filters,Client
+from pyrogram import filters
 from bot import autocaption
 from config import Config
 from translation import Translation
@@ -76,7 +76,7 @@ async def start(bot, cmd):
       await bot.send_message(
           chat_id = cmd.chat.id,
           text = Translation.START_TEXT.format(cmd.from_user.first_name, Config.ADMIN_USERNAME), 
-          reply_to_message_id=message.id,
+          reply_to_message_id = cmd.message_id,
           parse_mode = "markdown",
           disable_web_page_preview = True, 
           reply_markup = start_button
@@ -88,7 +88,7 @@ async def help(bot, cmd):
       await bot.send_message(
           chat_id = cmd.chat.id,
           text = Translation.HELP_TEXT, 
-          reply_to_message_id=cmd.message_id,
+          reply_to_message_id = cmd.message_id,
           parse_mode = "html",
           disable_web_page_preview = True,
           reply_markup = help_button           
@@ -100,7 +100,7 @@ async def about(bot, cmd):
       await bot.send_message(
           chat_id = cmd.chat.id,
           text = Translation.ABOUT_TEXT, 
-          reply_to_message_id=cmd.message_id,
+          reply_to_message_id = cmd.message_id,
           parse_mode = "markdown",
           disable_web_page_preview = True, 
           reply_markup = about_button
@@ -112,7 +112,7 @@ async def about(bot, cmd):
       await bot.send_message(
           chat_id = cmd.chat.id,
           text = Translation.SOURCE_TEXT, 
-          reply_to_message_id=cmd.message_id,
+          reply_to_message_id = cmd.message_id,
           parse_mode = "html",
           disable_web_page_preview = True, 
           reply_markup = source_button
@@ -170,7 +170,7 @@ async def button(bot, cmd: CallbackQuery):
                         InlineKeyboardButton("🖋 Current Caption", callback_data = "status_data")
                        ], 
                        [
-                        InlineKeyboardButton("😆 Oᴡɴᴇʀ", url="https://t.me/THE_DS_OFFICIAL"),
+                        InlineKeyboardButton("🍃 Follow Me", url="https://Instagram.com/proavipatil"),
                         InlineKeyboardButton("📕 About Me", callback_data="about_data")
                        ],
                        [

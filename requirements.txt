@@ -1,2 +1,2 @@
-pyrogram<=2 or 1.4.16
+pyrogram<=2 
 tgcrypto<=1.2.3

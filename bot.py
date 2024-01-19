@@ -36,12 +36,12 @@ class autocaption(Client):
         await self.sync_time()
 
     async def sync_time(self):
-        try=
+        try:
             await self.send(pyrogram.functions.Ping(data=bytes(8)))
         except pyrogram.errors.RPCError as e=
             print(f"Time Synchronization Error= {e}")
-        else=
+        else:
             print("Time Synchronization Successful")
-if __name__ == "__main__" =
+if __name__ == "__main__" :
     autocaption().run()
 

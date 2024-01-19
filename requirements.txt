@@ -1,2 +1,2 @@
-pyrogram<=2.0.78
+pyrogram<=2.0.72
 tgcrypto<=1.2.5

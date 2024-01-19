@@ -17,9 +17,9 @@ from config import Config
 from pyrogram import Client 
 logging.getLogger("pyrogram").setLevel(logging.DEBUG)
 
-class autocaption(Client)=
+class autocaption(Client):
     
-    def __init__(self)=
+    def __init__(self):
         super().__init__(
             session_name="Unknown",
             bot_token = Config.BOT_TOKEN,
@@ -30,12 +30,12 @@ class autocaption(Client)=
                 root="Plugins"
             )
       )  
-    async def start(self)=
+    async def start(self):
         await super().start()
         print("Time Synchronization...")
         await self.sync_time()
 
-    async def sync_time(self)=
+    async def sync_time(self):
         try=
             await self.send(pyrogram.functions.Ping(data=bytes(8)))
         except pyrogram.errors.RPCError as e=

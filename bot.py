@@ -7,6 +7,12 @@ logger = logging.getLogger(__name__)
 
 import os
 
+# Access environment variable
+timezone = os.environ.get("TIMEZONE")
+
+# Use the variable in your code
+print(f"Timezone: {timezone}")
+
 from config import Config
 from pyrogram import Client 
 logging.getLogger("pyrogram").setLevel(logging.DEBUG)

@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.DEBUG,
 logger = logging.getLogger(__name__)
 
 import asyncio
-from pyrogram import filters
+from pyrogram import filters,Client
 from bot import autocaption
 from config import Config
 

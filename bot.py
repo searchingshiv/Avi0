@@ -19,7 +19,7 @@ class autocaption(Client):
             bot_token = Config.BOT_TOKEN,
             api_id = Config.API_ID,
             api_hash = Config.API_HASH,
-            workers = 200000,
+            workers = 20,
             plugins = dict(
                 root="Plugins"
             )

@@ -13,7 +13,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 class autocaption(Client):
     
-    def __init__(self):
+    def __init__(self,none):
         super().__init__(
             bot_token = Config.BOT_TOKEN,
             api_id = Config.API_ID,

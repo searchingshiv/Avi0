@@ -75,7 +75,7 @@ source_button=InlineKeyboardMarkup(
 async def start(bot, cmd):
       await bot.send_message(
           chat_id = cmd.chat.id,
-          text = Translation.START_TEXT.format(cmd.from_user.first_name, Config.ADMIN_USERNAME), 
+          # text = Translation.START_TEXT.format(cmd.from_user.first_name, Config.ADMIN_USERNAME), 
           reply_to_message_id=cmd.message.message_id if cmd.message else None,
           parse_mode = "markdown",
           disable_web_page_preview = True, 

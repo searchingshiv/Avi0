@@ -15,7 +15,7 @@ class autocaption(Client):
     
     def __init__(self,name):
         super().__init__(
-            self.name = name
+            self.name == name
             bot_token = Config.BOT_TOKEN,
             api_id = Config.API_ID,
             api_hash = Config.API_HASH,

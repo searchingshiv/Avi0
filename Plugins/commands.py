@@ -72,7 +72,7 @@ source_button=InlineKeyboardMarkup(
 
 
 @autocaption.on_message(filters.command("start") & filters.private)
-async def start(bot, cmd):
+async def start(bot, cmd,message ):
       await bot.send_message(
           chat_id = cmd.chat.id,
           text = Translation.START_TEXT.format(cmd.from_user.first_name, Config.ADMIN_USERNAME), 
